@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<MsgModal> call, Throwable t) {
             chatsModalArrayList.add(new ChatsModal("please revert your question", BOT_KEY));
-//            Toast.makeText(MainActivity.this, "No response from the bot..", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "No response from the bot..", Toast.LENGTH_SHORT).show();
 
                 chatRVAdaptor.notifyDataSetChanged();
             }
